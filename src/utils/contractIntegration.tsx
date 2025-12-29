@@ -63,7 +63,7 @@ class ContractIntegration {
     private tokenAddress: string;
     private provider: BrowserProvider | JsonRpcProvider;
 
-    // private signer: Signer | null = null;
+    private signer: Signer | null = null;
     private contract: Contract | null = null;
     private tokenContract: Contract | null = null;
 
@@ -77,7 +77,7 @@ class ContractIntegration {
         this.provider = provider;
     }
 
-    async initialize(_signer: any): Promise<void> {
+    async initialize(signer: any): Promise<void> {
         this.signer = signer;
 
         this.contract = new Contract(
