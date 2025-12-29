@@ -1,3 +1,4 @@
+import React from "react";
 import { useGame } from '../contexts/GameContext';
 
 const Landing = () => {
