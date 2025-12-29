@@ -63,7 +63,7 @@ class ContractIntegration {
     private tokenAddress: string;
     private provider: BrowserProvider | JsonRpcProvider;
 
-    // private signer: Signer | null = null;
+    private signer: Signer | null = null;
     private contract: Contract | null = null;
     private tokenContract: Contract | null = null;
 
