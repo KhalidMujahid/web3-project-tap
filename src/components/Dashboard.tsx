@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useGame } from '../contexts/GameContext';
 import { formatAddress } from '../utils/walletUtils';
 
